@@ -15,7 +15,7 @@
         <td>{{id}}</td>
         <td>{{nome}}</td>
         <td>R$  {{preco}}</td>
-        <td><a href="/editar/{{id}}">[Editar]</a> <a href="/deletar/{{id}}">[Deletar]</a></td>
+        <td><a href="/editar/{{id}}">[Editar]</a> <a href="/deletar/{{id}}" onclick="return confirm('Certeza man?')" >[Deletar]</a></td>
     </tr>
     {{/products}}
 </table>

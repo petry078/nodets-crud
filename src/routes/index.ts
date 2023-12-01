@@ -17,6 +17,5 @@ router.get('/editar/:id', produtoController.editarProduto)
 router.post('/editar/:id', produtoController.editadoProduto)
 
 router.get('/deletar/:id', produtoController.deletarProduto)
-//router.post('/deletado/:id',  produtoController.deletadoProduto)
 
 export default router
