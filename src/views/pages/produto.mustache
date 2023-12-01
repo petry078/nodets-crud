@@ -1,7 +1,6 @@
 {{>partials/header}}
-<center>
-<button><a href=''>Adicionar usuários</a></button>
-</center>
+
+<h1>Todos os produtos</h1>
 
 <table border="1" width="100%">
     <tr>
@@ -16,9 +15,12 @@
         <td>{{id}}</td>
         <td>{{nome}}</td>
         <td>R$  {{preco}}</td>
-        <td>Editar / Deletar</td>
+        <td><a href="/editar/{{id}}">[Editar]</a> <a href="/deletar/{{id}}">[Deletar]</a></td>
     </tr>
     {{/products}}
 </table>
 
+<center>
+<a href='/cadastro'><button>Adicionar produto</button></a>
+</center>
 {{>partials/footer}}
